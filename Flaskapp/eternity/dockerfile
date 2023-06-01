@@ -1,0 +1,6 @@
+FROM python 
+COPY . ./Flaskapp
+WORKDIR ./Flaskapp 
+RUN pip3 install -r requirements.txt
+WORKDIR ./ui
+CMD ["gunicorn","--bind","0.0.0.0:5000","wsgi:application"]
