@@ -14,6 +14,6 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           key: ${{secrets.SSH_PRIVATE_KEY}}
           script: |
-            cd /home/ubuntu/stop-watch-app
-            sudo git pull origin main
+            cd /home/ubuntu/doc_comp
+            sudo git pull origin master
             echo "Done"
