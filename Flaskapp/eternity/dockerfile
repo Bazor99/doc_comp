@@ -1,5 +1,4 @@
 FROM python
-RUN sudo apt update
 COPY . ./Flaskapp
 WORKDIR ./Flaskapp 
 RUN pip3 install -r requirements.txt
