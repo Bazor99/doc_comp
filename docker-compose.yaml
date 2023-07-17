@@ -2,7 +2,7 @@ services:
   app:
     build: ./Flaskapp/eternity
     ports:
-      - 5000:6000
+      - 5000:5000
   web:
     build: ./nginx
     ports:
