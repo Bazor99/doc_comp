@@ -15,8 +15,6 @@ jobs:
           key: ${{secrets.SSH_PRIVATE_KEY}}
           script: |
             cd /home/ubuntu/doc_comp
-            sudo snap install docker
-            sudo apt install docker-compose
             sudo docker-compose up
             sudo git pull origin master
             echo "Done"
