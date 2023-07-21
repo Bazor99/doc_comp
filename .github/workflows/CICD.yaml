@@ -15,6 +15,7 @@ jobs:
           key: ${{secrets.SSH_PRIVATE_KEY}}
           script: |
             cd /home/ubuntu/doc_comp
-            sudo docker-compose up
+            sudo docker-compose down
             sudo git pull origin master
+            sudo docker-compose up
             echo "Done"
